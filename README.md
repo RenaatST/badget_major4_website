@@ -1,3 +1,3 @@
-Creative Programming III 	2014-2015 
+Major IV Badget 	2014-2015 
 
-Gilles Platteeuw 		Renaat Stuijk
+Jef Jaeken 		Renaat Stuijk
