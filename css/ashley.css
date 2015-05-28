@@ -1,0 +1,11 @@
+
+@font-face {
+  font-family: 'script';
+  src: url('../fonts/AshleyScriptMTStd.eot?#iefix') format('embedded-opentype'),
+  	   url('../fonts/AshleyScriptMTStd.otf')  format('opentype'),
+	   url('../fonts/AshleyScriptMTStd.woff') format('woff'),
+	   url('../fonts/AshleyScriptMTStd.ttf')  format('truetype'), 
+	   url('../fonts/AshleyScriptMTStd.svg#AshleyScriptMTStd') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
