@@ -48,29 +48,32 @@
 <article class="stappenplan">
 
 	<h2>Wat moet je doen?</h2>
-
-	<section class="stap1">
-		<h2>stap 1</h2>
-		<figure>
-		  <img src="" alt="">
-		  <figcaption>qsdùmfjqmslkdjfmqlksjdf</figcaption>
-		</figure>
-	</section>
-	<section class="stap2">
-		<h2>stap 2</h2>
-		<figure>
-		  <img src="" alt="">
-		  <figcaption>qmsdlkjfmqlskjdfmqlksjd</figcaption>
-		</figure>
-	</section>
-	<section class="stap3">
-		<h2>stap 3</h2>
-		<figure>
-		  <img src="" alt="">
-		  <figcaption>qmsdlkfjmqsdlkjfqsdfqsd</figcaption>
-		</figure>
-	</section>
 	
+	<div class="wrapper_stappenplan">
+		<section class="stap1">
+			<h2>stap 1</h2>
+			<figure>
+			  <img src="" alt="">
+			  <figcaption>qsdùmfjqmslkdjfmqlksjdf</figcaption>
+			</figure>
+		</section>
+
+		<section class="stap2">
+			<h2>stap 2</h2>
+			<figure>
+			  <img src="" alt="">
+			  <figcaption>qmsdlkjfmqlskjdfmqlksjd</figcaption>
+			</figure>
+		</section>
+
+		<section class="stap3">
+			<h2>stap 3</h2>
+			<figure>
+			  <img src="" alt="">
+			  <figcaption>qmsdlkfjmqsdlkjfqsdfqsd</figcaption>
+			</figure>
+		</section>
+	</div>
 
 </article>
 
