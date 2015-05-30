@@ -1,21 +1,21 @@
 <article class="intro">
 
-	<h1>Logo</h1>
-	<p>mqlsdkjfqmlk mkljsdmlfkjq sdkfjkj aezkj  sdkjfqmslkdjfm jjkr ae sdlkjq   azelkrj amlkj qsd flkmsjd kjaz mkjazrez k </p>
+	<h1 class="hide">Samenwerking tussen Maes & Pukkelpop!</h1>
+	<p>mqlsdkjfqmlk mkljsdmlfkjq sdkfjkj aezkj  sdkjfqmslkdjfm jjkr ae sdlkjq   azelkrj amlkj qsd flkmsjd kjaz mkjazrez k mqlsdkjfqmlk mkljsdmlfkjq sdkfjkj aezkj  sdkjfqmslkdjfm jjkr ae sdlkjq   azelkrj amlkj qsd flkmsjd kjaz mkjazrez k mqlsdkjfqmlk mkljsdmlfkjq sdkfjkj aezkj  sdkjfqmslkdjfm jjkr ae sdlkjq   azelkrj amlkj qsd flkmsjd kjaz mkjazrez k mqlsdkjfqmlk mkljsdmlfkjq sdkfjkj aezkj  sdkjfqmslkdjfm jjkr ae sdlkjq   azelkrj amlkj qsd flkmsjd kjaz mkjazrez k mqlsdkjfqmlk mkljsdmlfkjq sdkfjkj aezkj  sdkjfqmslkdjfm jjkr ae sdlkjq </p>
 	
 </article>
 
 <article class="appstore">
 	
 	<img src="" alt="">
-	<a href="">Available in app store now!</a>
+	<a href="http://appstore.com/ocarina" target="_blank">Available in app store now!</a>
 
 </article>
 
 <article class="promofilm">
-	<h1 class="hide">Promovideo AXE &amp; DIESEL</h1>
+	<h2>Promovideo Maes &amp; Pukkelpop</h2>
 
-	<video id="video" height="auto" autoplay>
+	<video id="video" height="auto">
 	  <source src="./mov/mov.mp4" type="video/mp4">
 	  <source src="./mov/mov.ogv" type="video/ogg">
 		   Sorry, your browser doesn't support embedded videos, 
@@ -27,12 +27,15 @@
 </article>
 
 <article class="cups">
+
+	<h2>De cups!</h2>
+
 	<ul>
-	<?php foreach ($spelers as $speler): ?>
+	<?php foreach ($bekers as $beker): ?>
 		<li class="cup">
 			<figure>
-			  <img src="./images/bekers/<?php echo $speler['naam']; ?>.jpg" class="bekerfoto" alt="">
-			  <figcaption><?php echo $speler["naam"]; ?></figcaption>
+			  <img src="./images/bekers/<?php echo $beker['naam']; ?>.jpg" class="bekerfoto" alt="">
+			  <figcaption><?php echo $beker["naam"]; ?></figcaption>
 			</figure>
 		</li>
 
@@ -43,6 +46,8 @@
 </article>
 
 <article class="stappenplan">
+
+	<h2>Wat moet je doen?</h2>
 
 	<section class="stap1">
 		<h2>stap 1</h2>

@@ -14,6 +14,7 @@ class ImagesController extends Controller {
 	public function index() {
 		
 		$this->set("spelers",$this->imageDAO->getAllPlayers());
+		$this->set("bekers",$this->imageDAO->getRandomBekers());
 		
 	}
 

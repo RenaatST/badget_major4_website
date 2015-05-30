@@ -13,6 +13,21 @@ class ImageDAO extends DAO {
         }
         return array();
     }
+
+
+    public function getRandomBekers(){
+        $sql = "SELECT * FROM `BADGES_spelers`
+                ORDER BY RAND()
+                LIMIT 4";
+        $stmt = $this->pdo->prepare($sql);
+        if($stmt->execute()){
+            $bekers = $stmt->fetchAll(PDO::FETCH_ASSOC);
+            if(!empty($bekers)){
+                return $bekers;
+            }
+        }
+        return array();
+    }
 	
 
 }

@@ -36,7 +36,7 @@
 </head>
 <body>
     <header>
-        <h1 class="hide logo">Maes &amp; Pukkelpop</h1>
+        <h1 class="logo">Maes &amp; Pukkelpop</h1>
     </header>
 
     <article id="container">
