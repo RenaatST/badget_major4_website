@@ -1,7 +1,7 @@
 <?php
 class DAO {
 	private static $dbHost = "localhost";
-	private static $dbName = "whiteboard";
+	private static $dbName = "BADGES_2015";
 	private static $dbUser = "root";
 	private static $dbPass = "root";
 	private static $sharedPDO;

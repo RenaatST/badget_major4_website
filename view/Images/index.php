@@ -28,36 +28,17 @@
 
 <article class="cups">
 	<ul>
+	<?php foreach ($spelers as $speler): ?>
 		<li class="cup">
 			<figure>
-			  <img src="" alt="">
-			  <figcaption>Cup 1</figcaption>
+			  <img src="./images/bekers/<?php echo $speler['naam']; ?>.jpg" class="bekerfoto" alt="">
+			  <figcaption><?php echo $speler["naam"]; ?></figcaption>
 			</figure>
 		</li>
 
-		<li class="cup">
-			<figure>
-			  <img src="" alt="">
-			  <figcaption>Cup 2</figcaption>
-			</figure>
-		</li>
-
-		<li class="cup">
-			<figure>
-			  <img src="" alt="">
-			  <figcaption>Cup 3</figcaption>
-			</figure>
-		</li>
-
-		<li class="cup">
-			<figure>
-			  <img src="" alt="">
-			  <figcaption>Cup 4</figcaption>
-			</figure>
-		</li>
+	<?php endforeach; ?>
 	</ul>
 
-	<!--<?php foreach ($opdrachten as $opdracht) { echo "";}?>-->
 
 </article>
 

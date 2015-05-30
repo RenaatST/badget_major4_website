@@ -13,10 +13,7 @@ class ImagesController extends Controller {
 
 	public function index() {
 		
-		
-	}
-
-	public function view() {
+		$this->set("spelers",$this->imageDAO->getAllPlayers());
 		
 	}
 
