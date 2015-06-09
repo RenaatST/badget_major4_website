@@ -49,11 +49,11 @@
         <nav>
             <h1><span class="hide">Navigatie<span></h1>
             <ul>
-                <li><a href="" title="">Cups</a></li>
-                <li><a href="" title="">Wedstrijd</a></li>
-                <li><a href="" title="">App Store</a></li>
-                <li><a href="" title="">Promofilm</a></li>
-                <li><a href="" title="">Prijzen</a></li>
+                <li><a href="#" class="navcups">Cups</a></li>
+                <li><a href="#" class="navweds">Wedstrijd</a></li>
+                <li><a href="#" class="navapp">App Store</a></li>
+                <li><a href="#" class="navpromo">Promofilm</a></li>
+                <li><a href="#" class="navprijs">Prijzen</a></li>
             </ul>
         </nav>
 
@@ -62,7 +62,7 @@
             <h1 class="logo">
             <span class="hide">Maes & Pukkelpop</span>
                 <a href="">
-                    <img data-0="width: 400px;height: 300px;" data-500="width: 500px;height: 400px;" src="./images/logo.png" alt="logo" width="400" height="300"/>
+                    <img src="./images/logo.png" alt="logo" width="400" height="300"/>
                 </a>
             </h1>
         </header>
@@ -93,7 +93,11 @@
 
     <?php echo $content; ?>
 
+
+
     </article>
+
+
 
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>

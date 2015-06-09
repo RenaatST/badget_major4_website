@@ -2,30 +2,26 @@
 
 	function init() {
 
-		$("#clickheidi").click(function(e){
-			e.preventDefault();
-			scrollTo("textheidi");
-		});
+		$(".navcups").click(function(e){e.preventDefault();scrollTo("cups");});
+		$(".navweds").click(function(e){e.preventDefault();scrollTo("stappenplan");});
+		$(".navapp").click(function(e){e.preventDefault();scrollTo("appstore");});
+		$(".navpromo").click(function(e){e.preventDefault();scrollTo("promofilm");});
+		$(".navprijs").click(function(e){e.preventDefault();scrollTo("prijs");});
 
-		$("#clickmarah").click(function(e){
-			e.preventDefault();
-			scrollTo("textmarah");
-		});
+		$("#terug").click(function(e){e.preventDefault();scrollTo("intro");});
 
-		$("#worknav").click(function(e){
-			scrollTo("works");
-		});
+
 
 		
  	}
 
  	function scrollTo(id) {
-        $('html, body').animate({ scrollTop: $('#' + id).offset().top - 70}, 'normal');
+        $('html, body').animate({ scrollTop: $('.' + id).offset().top - 30}, 'normal');
         return false;
     }
 
  	function goTo(id){
-	    $("html,body").animate({scrollTop:$("#"+id).offset().top});
+	    $("html,body").animate({scrollTop:$("."+id).offset().top});
 	}
 
 	init();

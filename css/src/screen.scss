@@ -58,7 +58,7 @@ body {
   font-family: ando;
 
 
-  background: url(../images/bg.jpg) no-repeat center center fixed; 
+  background: url(../images/bg.jpg) no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -67,6 +67,10 @@ body {
 
 .hide {
   display: none;
+}
+
+.dummy {
+  clear: both;
 }
 
 
@@ -88,6 +92,16 @@ h1{
   font-size: 4em;
   font-weight: lighter;
   margin-bottom: 30px;
+}
+
+.terugnaarboven {
+  font-family: bebas;
+  font-size: 1.6em;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+  text-decoration: none;
+  padding-bottom: 50px;
 }
 
 
@@ -244,9 +258,6 @@ image {
   
 
     ul {
-
-
-    
         li {
           display: inline-block;
         }
@@ -333,6 +344,31 @@ image {
 
 }
 
+
+
+////////////////////////////////////////////////////
+//                     MOV                        //
+////////////////////////////////////////////////////
+
+.divaroundmov {
+  width: 100%;
+  background: url(../images/bgmov.jpg) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+.promofilm {
+  padding-top: 40px;
+
+  video {
+    width: 70%;
+    margin: auto;
+  }
+}
+
 ////////////////////////////////////////////////////
 //                APPSTORE                        //
 ////////////////////////////////////////////////////
@@ -340,7 +376,13 @@ image {
 .appstore {
   position: relative;
   color: #fff;
-  margin-top: 150px;
+  min-height: 400px;
+  margin-bottom: 140px;
+
+  .imagesiphones {
+    min-height: 300px;
+    margin-top: 100px;
+  }
 
   .imagesiphones, .tekstappstore {
     display: inline-block;
@@ -349,26 +391,32 @@ image {
   }
 
   .imagesiphones img {
-    position: relative;
-
+    position: absolute;
   }
 
   .screen1 {
     z-index: 10;
-    margin-left: 200px;
+    margin-left: -100px;
+    left: 50%;
+    top: 0px;
   }
 
   .screen2 {
     z-index: 9;
-    margin-left: -400px;
+    left: 5%;
+    top: 0px;
   }
 
   .screen3 {
     z-index: 6;
-    margin-left: 70px;
+    margin-left: -125px;
+    left: 75%;
+    top: 0px;
   }
 
   .tekstappstore {
+
+    margin-top: 100px;
 
     p {
       font-size: 1.4em;
@@ -388,20 +436,6 @@ image {
 
 }
 
-////////////////////////////////////////////////////
-//                     MOV                        //
-////////////////////////////////////////////////////
-
-
-
-.promofilm {
-
-  video {
-    width: 50%;
-    margin: auto;
-  }
-}
-
 
 
 ////////////////////////////////////////////////////
@@ -411,8 +445,18 @@ image {
 
 .prijs {
 
+  img {
+    padding-top: 30px;
+  }
 
-
+  p {
+    font-size: 1.4em;
+      font-family: cecil;
+      width: 40%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 100px;
+  }
 
 }
 

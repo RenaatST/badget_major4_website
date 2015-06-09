@@ -73,15 +73,16 @@
 	<header>
         <h1>Promovideo Maes &amp; Pukkelpop</h1>
     </header>
-
-	<video id="video" height="auto" controls>
-	  <source src="./mov/mov.mp4" type="video/mp4">
-	  <source src="./mov/mov.ogv" type="video/ogg">
-		   Sorry, your browser doesn't support embedded videos, 
-	  but don't worry, you can <a href="./mov/mov.ogg">download it</a>
-	  and watch it with your favorite video player!
-	</video>
-
+	
+	<div class="divaroundmov">
+		<video id="video" height="auto" controls>
+		  <source src="./mov/mov.mp4" type="video/mp4">
+		  <source src="./mov/mov.ogv" type="video/ogg">
+			   Sorry, your browser doesn't support embedded videos, 
+		  but don't worry, you can <a href="./mov/mov.ogg">download it</a>
+		  and watch it with your favorite video player!
+		</video>
+	</div>
 
 </article>
 
@@ -117,17 +118,17 @@
 	
 
 </article>
-
-
+<div class="dummy">&nbsp;</div>
 
 <article class="prijs">
 	<header>
-        <h1>Prijs</h1>
+        <img src="./images/goodiegbag.png" alt="" width="370"> <h1>voor de winnaars!</h1>
     </header>
+	
+	<p>Als jij alle opdrachten hebt volbracht dan kan je vervolgens je gewonnen badges inruilen tegen een Maes-goodiebag. Hierin zitten verschillende coole hebbedingetjes! Download  nu de app en speel mee!</p>
 
-	<figure>
-	  <img src="" alt="">
-	  <figcaption>qmsdlkfjmqsdlkjfqsdfqsd</figcaption>
-	</figure>
-
+	<a href="#" class="terugnaarboven" id="terug">terug naar boven</a>
 </article>
+
+
+
