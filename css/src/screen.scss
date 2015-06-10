@@ -148,6 +148,25 @@ nav {
 //                     HEADER                     //
 ////////////////////////////////////////////////////
 
+.bekertopp {
+  position: absolute;
+  -ms-transform: rotate(7deg); /* IE 9 */
+  -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+  transform: rotate(7deg);
+  left: -300px;
+  transform-origin:right bottom;
+}
+
+.bekertopklein {
+  position: absolute;
+  -ms-transform: rotate(7deg); /* IE 9 */
+  -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+  transform: rotate(7deg);
+  right: 20%;
+  top: 35%;
+}
+
+
 h1 svg {
   width: 400px;
   height: 300px;
@@ -174,6 +193,7 @@ image {
 
 .intro {
   color: #fff;
+  position: relative;
 
 
   h2 {
@@ -405,6 +425,8 @@ image {
     z-index: 9;
     left: 5%;
     top: 0px;
+
+    transform-origin:right bottom;
   }
 
   .screen3 {
@@ -412,6 +434,8 @@ image {
     margin-left: -125px;
     left: 75%;
     top: 0px;
+
+    transform-origin:left bottom;
   }
 
   .tekstappstore {

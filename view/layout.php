@@ -40,6 +40,9 @@
     
     <article class="intro">
 
+        <img data-0="-ms-transform: rotate(7deg); /* IE 9 */-webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */transform: rotate(7deg);" data-500="-ms-transform: rotate(14deg); /* IE 9 */-webkit-transform: rotate(14deg); /* Chrome, Safari, Opera */transform: rotate(14deg);" class="bekertopp" src="./images/bekertop.png" alt="" height="600"/>
+        <img class="bekertopklein" src="./images/kleinebekertop.png" alt="" height="150"/>
+
         <header>
             <h1 class="hide">
             Pukkelpop 2015
@@ -65,6 +68,7 @@
                     <img src="./images/logo.png" alt="logo" width="400" height="300"/>
                 </a>
             </h1>
+
         </header>
 
         <h2>Word maat van Maes en win jouw gepersonaliseerde beker!</h2>

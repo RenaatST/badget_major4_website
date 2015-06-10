@@ -94,9 +94,11 @@
 
     <section class="imagesiphones">
     	<img src="./images/iphone1.png" alt="screen1" class="screen1" width="200" height="400"/>
-		<img src="./images/iphone2.png" alt="screen2" class="screen2" width="250" height="400"/>
-		<img src="./images/iphone3.png" alt="screen3" class="screen3" width="250" height="400"/>
+		<img data-2000="-ms-transform: rotate(-20deg); /* IE 9 */-webkit-transform: rotate(-20deg); /* Chrome, Safari, Opera */transform: rotate(-20deg);" data-2500="-ms-transform: rotate(0deg); /* IE 9 */-webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */transform: rotate(0deg);" src="./images/iphone2.png" alt="screen2" class="screen2" width="250" height="400"/>
+		<img data-2000="-ms-transform: rotate(20deg); /* IE 9 */-webkit-transform: rotate(20deg); /* Chrome, Safari, Opera */transform: rotate(20deg);"    data-2500="-ms-transform: rotate(0deg); /* IE 9 */-webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */transform: rotate(0deg);" src="./images/iphone3.png" alt="screen3" class="screen3" width="250" height="400"/>
     </section>
+
+    
 
 
 	<section class="tekstappstore">
