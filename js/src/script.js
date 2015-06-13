@@ -12,8 +12,10 @@
 
 
 
+
 		
  	}
+
 
  	function scrollTo(id) {
         $('html, body').animate({ scrollTop: $('.' + id).offset().top - 30}, 'normal');

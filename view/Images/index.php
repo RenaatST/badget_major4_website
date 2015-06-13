@@ -8,7 +8,7 @@
 	<?php foreach ($bekers as $beker): ?>
 		<li class="cup">
 			<figure>
-			  <img src="./images/bekers/<?php echo $beker['naam']; ?>.jpg" class="bekerfoto" alt="">
+			  <img src="./images/bekers/<?php echo $beker['naam']; ?>.png" class="bekerfoto" alt="" />
 			  <figcaption><?php echo $beker["naam"]; ?></figcaption>
 			</figure>
 		</li>
@@ -32,11 +32,11 @@
 	
 	<ul>
 	<img src="./images/swirl.png" alt="" class="swirls">
-	<img src="./images/confetti.png" alt="" class="conf1"  data-1000="opacity:0;" data-1200="opacity:1;">
-	<img src="./images/confetti2.png" alt="" class="conf2" data-1000="opacity:0;" data-1200="opacity:1;">
+	<img id="skrollr-body"src="./images/confetti.png" alt="" class="conf1"  data-1100="opacity:0;" data-1200="opacity:1;">
+	<img id="skrollr-body" src="./images/confetti2.png" alt="" class="conf2" data-1100="opacity:0;" data-1200="opacity:1;">
 	 <li>
 	 	
-		<figure data-500="padding-left:-500px;margin-right:100px;" data-1200="margin-left:0;margin-right:0;">
+		<figure data-500="" data-1200="">
 		  <img src="./images/beer.png" alt="" width="200" >
 		  <h2>Haal een pintje</h2>
 		  <figcaption>Koop een pintje aan één van vele bars op het festivalterrein!</figcaption>
@@ -44,7 +44,7 @@
 	 </li>
 	 <li>
 		
-		<figure data-500="padding-left:-500px;margin-right:100px;" data-1200="margin-left:0;margin-right:0;">
+		<figure>
 		  <img src="./images/pattern.png" alt="" width="200">
 		  <h2>Personaliseer</h2>
 		  <figcaption>Neem een foto en personaliseer jouw CUP!</figcaption>
@@ -52,7 +52,7 @@
 	 </li>
 	 <li>
 		
-		<figure>
+		<figure data-500="" data-1200="">
 		  <img src="./images/polaroid.png" alt="" width="200">
 		  <h2>Speel en win!</h2>
 		  <figcaption>Zoek je maat, en ga de strijd aan om jouw CUP te winnen!</figcaption>
@@ -93,9 +93,9 @@
 
 
     <section class="imagesiphones">
-    	<img src="./images/iphone1.png" alt="screen1" class="screen1" width="200" height="400"/>
-		<img data-2000="-ms-transform: rotate(-20deg); /* IE 9 */-webkit-transform: rotate(-20deg); /* Chrome, Safari, Opera */transform: rotate(-20deg);" data-2500="-ms-transform: rotate(0deg); /* IE 9 */-webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */transform: rotate(0deg);" src="./images/iphone2.png" alt="screen2" class="screen2" width="250" height="400"/>
-		<img data-2000="-ms-transform: rotate(20deg); /* IE 9 */-webkit-transform: rotate(20deg); /* Chrome, Safari, Opera */transform: rotate(20deg);"    data-2500="-ms-transform: rotate(0deg); /* IE 9 */-webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */transform: rotate(0deg);" src="./images/iphone3.png" alt="screen3" class="screen3" width="250" height="400"/>
+    	<img src="./images/iphone1.png" alt="screen1" class="screen1" width="220"/>
+		<img data-2000="-ms-transform: rotate(0deg); /* IE 9 */-webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */transform: rotate(0deg);"  data-2500="-ms-transform: rotate(-10deg); /* IE 9 */-webkit-transform: rotate(-10deg); /* Chrome, Safari, Opera */transform: rotate(-10deg);" src="./images/iphone2.png" alt="screen2" class="screen2" width="250" height="400"/>
+		<img data-2000="-ms-transform: rotate(0deg); /* IE 9 */-webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */transform: rotate(0deg);"  data-2500="-ms-transform: rotate(10deg); /* IE 9 */-webkit-transform: rotate(10deg); /* Chrome, Safari, Opera */transform: rotate(10deg);" src="./images/iphone3.png" alt="screen3" class="screen3" width="250" height="400"/>
     </section>
 
     
@@ -108,8 +108,8 @@
 
 	    <p>Winnen of verliezen, meedoen is altijd even tof! Maak kans op een goodie bag van Maes. Download snel de app in de app store en wordt een maat van maes!</p>
 		</br>
-
-		<a href="http://appstore.com/ocarina" target="_blank"><img src="./images/buttonapp.png" alt="" width="100"><span class="hide">Available in app store now!</span>
+		<img src="./images/iphone1.png" alt="screen" class="screen_new hide" width="220"/>
+		<a href="http://appstore.com/ocarina" target="_blank"><img src="./images/buttonapp.png" alt="" width="140"><span class="hide">Available in app store now!</span>
 			
 		</a>
 

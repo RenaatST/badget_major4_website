@@ -1,3 +1,4 @@
+@import "compass/reset";
 @import "compass/css3/box-sizing";
 
 
@@ -167,18 +168,10 @@ nav {
 }
 
 
-h1 svg {
-  width: 400px;
-  height: 300px;
-}
-
-image {
-  width: 400px;
-  height: 300px;
-}
-
 .logo {
+  width: 400px;
   margin-top: 40px;
+  padding-bottom: 30px;
   font-size: 5em;
   text-align: center;
   margin: auto;
@@ -201,12 +194,16 @@ image {
     font-size: 3.4em;
     font-weight: lighter;
     text-align: center;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 13px;
   }
 
   p {
     font-size: 1.5em;
+    line-height: 1.5em;
     text-align: center;
-    width: 50%;
+    width: 80%;
     margin: auto;
     font-family: cecil;
     font-weight: lighter;
@@ -266,12 +263,6 @@ image {
 //                     CUPS                       //
 ////////////////////////////////////////////////////
 
-
-.bekerfoto {
-  width: 200px;
-  height: 200px;
-}
-
 .cups {
   margin-top: 40px;
   
@@ -280,6 +271,11 @@ image {
     ul {
         li {
           display: inline-block;
+          width: percentage(1/5);
+
+          img {
+            width: 100%;
+          }
         }
     }
 }
@@ -325,6 +321,7 @@ image {
       margin-top: -20px;
       font-size: 1.3em;
       font-family: cecil;
+      line-height: 1.5em;
     }
   }
 
@@ -337,12 +334,13 @@ image {
 
   ul {
 
+    margin-top: 60px;
 
       li {
-        z-index: 100;
+        z-index: 10;
         display: inline-block;
-        padding: 30px;
-
+        width:percentage(0.9/3);
+        
         h2 {
           font-size: 2.8em;
           font-weight: lighter;
@@ -358,6 +356,7 @@ image {
           margin-right: auto;
           font-weight: lighter;
           margin-bottom: 30px;
+          line-height: 1.5em;
         }
       }
   }
@@ -382,7 +381,7 @@ image {
 
 .promofilm {
   padding-top: 40px;
-
+  margin-bottom: 140px;
   video {
     width: 70%;
     margin: auto;
@@ -395,19 +394,14 @@ image {
 
 .appstore {
   position: relative;
-  color: #fff;
-  min-height: 400px;
-  margin-bottom: 140px;
-
-  .imagesiphones {
-    min-height: 300px;
-    margin-top: 100px;
-  }
+  margin-top: 250px;
+  margin-bottom: 10px;
 
   .imagesiphones, .tekstappstore {
     display: inline-block;
+    width:percentage(1/3);
+    margin-bottom: 30px;
     position: relative;
-    width: 40%;
   }
 
   .imagesiphones img {
@@ -417,14 +411,14 @@ image {
   .screen1 {
     z-index: 10;
     margin-left: -100px;
-    left: 50%;
-    top: 0px;
+    left: 45%;
+    top: -400px;
   }
 
   .screen2 {
     z-index: 9;
-    left: 5%;
-    top: 0px;
+    left: 0%;
+    top: -400px;
 
     transform-origin:right bottom;
   }
@@ -432,15 +426,17 @@ image {
   .screen3 {
     z-index: 6;
     margin-left: -125px;
-    left: 75%;
-    top: 0px;
+    left: 60%;
+    top: -400px;
 
     transform-origin:left bottom;
   }
 
   .tekstappstore {
-
-    margin-top: 100px;
+    
+    header h1 {
+      padding-top: 100px;
+    }
 
     p {
       font-size: 1.4em;
@@ -448,6 +444,7 @@ image {
       width: 60%;
       margin-left: auto;
       margin-right: auto;
+      line-height: 1.5em;
 
     }
 
@@ -474,12 +471,13 @@ image {
   }
 
   p {
-    font-size: 1.4em;
+    font-size: 1.7em;
       font-family: cecil;
       width: 40%;
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 100px;
+      line-height: 1.7em;
   }
 
 }
@@ -490,29 +488,100 @@ image {
 //              RESPONSIVE                        //
 ////////////////////////////////////////////////////
 
+@media screen and (max-width: 1100px) {
+  .appstore {
+    position: relative;
 
-@media screen and (max-width: 800px) {
-  
+    .imagesiphones, .tekstappstore {
+      width: 100%;
+      position: relative;
+    }
 
-  nav {
-    
-    width: 100%;
+
+    .screen1 {
+      left: 50%;
+    }
+
+    .screen2 {
+      left: 28%;
+    }
+
   }
 
-
-
-
-
+  .promofilm {
+    margin-bottom: 440px;
+  }
 
 }
 
 
+@media screen and (max-width: 800px) {
+  
+  .screen2, .screen1, .screen3 {
+      display: none;
+    }
+
+  .screen_new {
+    display: inline-block;
+    position: absolute;
+    left: -140px;
+    z-index: -100;
+    top: -40px;
+  }
 
 
+  .tekstappstore {
+    margin-top: -400px;
+  }
+
+  .prijs {
+
+    img {
+      width: 95%;
+    }
+  }
+
+  nav {
+    visibility: hidden;
+  }
+
+  .bekertopp, .bekertopklein {
+    display: none;
+  }
+
+  .cups ul li {
+    width: percentage(1/3);
+    height: 50%;
+  }
 
 
+  .stappenplan {
+    ul {
 
+      margin-top: 60px;
 
+        li {
+          z-index: 10;
+          display: inline-block;
+          width: 100%;
+          font-size: 1.5em;
+        }
+    }
+    .swirls {
+      display: none;
+    }
+  }
+
+  .logo, .logoimage {
+    width: 90%;
+    margin-top: -60px;
+  }
+  
+  .prijs p {
+    width: 90%;
+  }
+
+}
 
 
 

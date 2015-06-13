@@ -64,8 +64,8 @@
         <header>
             <h1 class="logo">
             <span class="hide">Maes & Pukkelpop</span>
-                <a href="">
-                    <img src="./images/logo.png" alt="logo" width="400" height="300"/>
+                <a href="#">
+                    <img src="./images/logo.png" alt="logo" class="logoimage" width="400"/>
                 </a>
             </h1>
 
@@ -108,7 +108,13 @@
     <script src="./js/script.dist.js" type="text/javascript"></script>
     <script type="text/javascript" src="./js/skrollr.min.js"></script>
     <script type="text/javascript">
-    var s = skrollr.init();
+    var s = skrollr.init({          
+            mobileCheck: function() {
+                //hack - forces mobile version to be off
+                return false;
+            }
+        });
+
     </script>
 </body>
 </html>
