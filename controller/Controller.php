@@ -13,6 +13,8 @@ class Controller {
 		$this->createViewVarWithContent();
 		$this->renderInLayout();
 		$this->cleanupSessionMessages();
+
+		
 	}
 
 	public function set($variableName, $value) {

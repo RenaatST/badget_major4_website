@@ -1,4 +1,9 @@
 <?php
+
+error_reporting(E_ALL);
+ini_set('display_errors', TRUE);
+ini_set('display_startup_errors', TRUE);
+
 session_start();
 
 define('DS', DIRECTORY_SEPARATOR);
@@ -8,6 +13,10 @@ $routes = array(
     'home' => array(
         'controller' => 'Images',
         'action' => 'index'
+    ),
+    'search' => array(
+        'controller' => 'Images',
+        'action' => 'zoek'
     )
 );
 

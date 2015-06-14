@@ -15,8 +15,22 @@ class ImagesController extends Controller {
 		
 		$this->set("spelers",$this->imageDAO->getAllPlayers());
 		$this->set("bekers",$this->imageDAO->getRandomBekers());
+
 		
 	}
 
+	public function zoek() {
+
+		
+		$zoekbekers = array();
+        $zoekitem = "";
+        if(!empty($_POST) && !empty($_POST['txtzoek'])){
+            $zoekbekers = $this->imageDAO->zoekBekers($_POST['txtzoek'], 100);
+            $searchItem = $_POST['txtzoek'];
+        }
+        $this->set('zoekitem', $zoekitem);
+        $this->set('zoekbekers', $zoekbekers);
+		
+	}
 
 }

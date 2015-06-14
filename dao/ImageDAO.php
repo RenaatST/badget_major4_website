@@ -28,6 +28,24 @@ class ImageDAO extends DAO {
         }
         return array();
     }
+
+    public function zoekBekers($naam, $limit){
+        $sql = 'SELECT * FROM BADGES_spelers WHERE naam LIKE :naam LIMIT :limit';
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->bindValue(':naam', "%" .$naam."%");
+        $stmt->bindValue(':limit', $limit);
+        if($stmt->execute())
+        {
+            $zoekbekers = $stmt->fetchAll(PDO::FETCH_ASSOC);
+            if(!empty($zoekbekers)){
+                return $zoekbekers;
+            }
+        }
+        return array();
+    }
+
+
+
 	
 
 }

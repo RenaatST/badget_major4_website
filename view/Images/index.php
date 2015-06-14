@@ -9,7 +9,7 @@
 		<li class="cup">
 			<figure>
 			  <img src="./images/bekers/<?php echo $beker['naam']; ?>.png" class="bekerfoto" alt="" />
-			  <figcaption><?php echo $beker["naam"]; ?></figcaption>
+			  <figcaption><p><?php echo $beker["naam"]; ?></p></figcaption>
 			</figure>
 		</li>
 
