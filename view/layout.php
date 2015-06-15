@@ -23,7 +23,7 @@
     <article class="intro">
 
         <img data-0="-ms-transform: rotate(7deg); /* IE 9 */-webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */transform: rotate(7deg);" data-500="-ms-transform: rotate(14deg); /* IE 9 */-webkit-transform: rotate(14deg); /* Chrome, Safari, Opera */transform: rotate(14deg);" class="bekertopp" src="./images/bekertop.png" alt="" height="600"/>
-        <img class="bekertopklein" src="./images/kleinebekertop.png" alt="" height="150"/>
+        
 
         <header>
             <h1 class="hide">
@@ -55,7 +55,7 @@
 
         <h2>Word maat van Maes en win jouw gepersonaliseerde beker!</h2>
         <p>Iedereen wil deze prestigieuze MAES CUP winnen. Zoek je tegenstander en strijd om de beker! Sprint, balanceer, en maak vrienden. Iedereen wil deze prestigieuze MAES CUP winnen. </p>
-        
+        <!--<img class="bekertopklein" src="./images/kleinebekertop.png" alt="" height="150"/>-->
             <img src="./images/mannekes.png" alt="mannekes" class="mannekess" width="70"/>
         
 
@@ -77,18 +77,11 @@
 
 
     </article>
-
+    <script type="text/javascript" src="./js/skrollr.min.js"></script>
+    <script type="text/javascript" src="./js/vendor/modernizr.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script src="./js/script.dist.js" type="text/javascript"></script>
-    <script type="text/javascript" src="./js/skrollr.min.js"></script>
-    <script type="text/javascript">
-    var s = skrollr.init({          
-            mobileCheck: function() {
-                //hack - forces mobile version to be off
-                return false;
-            }
-        });
+ 
 
-    </script>
 </body>
 </html>

@@ -32,8 +32,8 @@
 	
 	<ul>
 	<img src="./images/swirl.png" alt="" class="swirls">
-	<img id="skrollr-body"src="./images/confetti.png" alt="" class="conf1"  data-1100="opacity:0;" data-1200="opacity:1;">
-	<img id="skrollr-body" src="./images/confetti2.png" alt="" class="conf2" data-1100="opacity:0;" data-1200="opacity:1;">
+	<img id="skrollr-body"src="./images/confetti.png" alt="" class="conf1"  data-700="opacity:0;" data-1500="opacity:1;">
+	<img id="skrollr-body" src="./images/confetti2.png" alt="" class="conf2" data-700="opacity:0;" data-1500="opacity:1;">
 	 <li>
 	 	
 		<figure data-500="" data-1200="">
@@ -75,7 +75,7 @@
     </header>
 	
 	<div class="divaroundmov">
-		<video id="video" height="auto" controls>
+		<video poster="./mov/postermov.jpg" id="video" height="auto" controls>
 		  <source src="./mov/mov.mp4" type="video/mp4">
 		  <source src="./mov/mov.ogv" type="video/ogg">
 			   Sorry, your browser doesn't support embedded videos, 
@@ -94,8 +94,8 @@
 
     <section class="imagesiphones">
     	<img src="./images/iphone1.png" alt="screen1" class="screen1" width="220"/>
-		<img data-2000="-ms-transform: rotate(0deg); /* IE 9 */-webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */transform: rotate(0deg);"  data-2500="-ms-transform: rotate(-10deg); /* IE 9 */-webkit-transform: rotate(-10deg); /* Chrome, Safari, Opera */transform: rotate(-10deg);" src="./images/iphone2.png" alt="screen2" class="screen2" width="250" height="400"/>
-		<img data-2000="-ms-transform: rotate(0deg); /* IE 9 */-webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */transform: rotate(0deg);"  data-2500="-ms-transform: rotate(10deg); /* IE 9 */-webkit-transform: rotate(10deg); /* Chrome, Safari, Opera */transform: rotate(10deg);" src="./images/iphone3.png" alt="screen3" class="screen3" width="250" height="400"/>
+		<img data-1500="-ms-transform: rotate(0deg); /* IE 9 */-webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */transform: rotate(0deg);"  data-4000="-ms-transform: rotate(-20deg); /* IE 9 */-webkit-transform: rotate(-20deg); /* Chrome, Safari, Opera */transform: rotate(-20deg);" src="./images/iphone2.png" alt="screen2" class="screen2" width="250" height="400"/>
+		<img data-1500="-ms-transform: rotate(0deg); /* IE 9 */-webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */transform: rotate(0deg);"  data-4000="-ms-transform: rotate(20deg); /* IE 9 */-webkit-transform: rotate(20deg); /* Chrome, Safari, Opera */transform: rotate(20deg);" src="./images/iphone3.png" alt="screen3" class="screen3" width="250" height="400"/>
     </section>
 
     

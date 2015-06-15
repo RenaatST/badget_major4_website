@@ -111,7 +111,6 @@ h1{
 ////////////////////////////////////////////////////
 
 
-
 nav {
     padding-top: 30px;
     margin-bottom: 80px;
@@ -157,15 +156,15 @@ nav {
   left: -300px;
   transform-origin:right bottom;
 }
-
+/*
 .bekertopklein {
   position: absolute;
-  -ms-transform: rotate(7deg); /* IE 9 */
-  -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+  -ms-transform: rotate(7deg);
+  -webkit-transform: rotate(7deg);
   transform: rotate(7deg);
-  right: 20%;
-  top: 35%;
-}
+  right: 14%;
+  top: 20%;
+}*/
 
 
 .logo {
@@ -203,7 +202,7 @@ nav {
     font-size: 1.5em;
     line-height: 1.5em;
     text-align: center;
-    width: 80%;
+    width: 60%;
     margin: auto;
     font-family: cecil;
     font-weight: lighter;
@@ -231,7 +230,7 @@ nav {
       font-weight: lighter;
     } 
 
-    #txtzoek, #btnzoek {
+    #txtzoek{
       width: 200px;
       padding-top: 5px;
       margin-top: 10px;
@@ -246,15 +245,6 @@ nav {
     #txtzoek {
       border: 2px solid #fff;
     }
-
-    #btnzoek {
-      border: none;
-    }
-    
-
-    input[type="submit"]:hover {
-      cursor: pointer;
-    }
   }
 }
 
@@ -264,11 +254,17 @@ nav {
 ////////////////////////////////////////////////////
 
 ol {
-  width: 200px;
+  width: 50%;
   margin: auto;
 
+  -webkit-animation-duration: .4s;
+    animation-duration: .4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+
+
   p {
-      font-size: 3em;
+    font-size: 3em;
     width: 100%;
     text-align: center;
     overflow-x: scroll;
@@ -276,7 +272,9 @@ ol {
 
   li {
     display: inline-block;
-    width: percentage(1/1);
+    float: left;
+    
+    
 
     img {
       width: 100%;
@@ -284,6 +282,121 @@ ol {
 
   }
 }
+
+
+.eencup {
+
+  width: 200px;
+  margin: auto;
+
+  li {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.tweecup {
+  width: 400px;
+  margin: auto;
+
+  li {
+    width: percentage(1/2);
+  }
+}
+
+.driecup {
+
+  li {
+    width: percentage(1/3);
+  }
+}
+
+.viercup {
+
+  li {
+
+  display: inline-block;
+    width: percentage(1/4);
+  }
+}
+
+.vijfcup {
+
+  li {
+    width: percentage(1/5);
+  }
+}
+
+.zescup {
+
+  li {
+    width: percentage(1/6);
+  }
+}
+
+.zevencup {
+
+  li {
+    width: percentage(1/7);
+  }
+}
+
+.achtcup {
+
+  li {
+    width: percentage(1/8);
+  }
+}
+
+.negencup {
+
+  li {
+    width: percentage(1/9);
+  }
+}
+
+
+
+
+@-webkit-keyframes slideInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+        -ms-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+.slideInDown {
+    -webkit-animation-name: slideInDown;
+    animation-name: slideInDown;
+}
+
+
+
+
+
+
 
 .cups {
   margin-top: 40px;
@@ -339,6 +452,7 @@ ol {
 
 .stappenplan {
   margin-top: 70px;
+  margin-bottom: 100px;
   
   header {
 
@@ -455,7 +569,7 @@ ol {
   .screen3 {
     z-index: 6;
     margin-left: -125px;
-    left: 60%;
+    left: 65%;
     top: -400px;
 
     transform-origin:left bottom;
@@ -614,6 +728,27 @@ ol {
   .prijs p {
     width: 90%;
   }
+
+
+  .eencup, .tweecup, .driecup, .viercup, .vijfcup, .zescup, .zevencup, .achtcup, .negencup {
+
+    width: 200px;
+    margin: auto;
+
+    li {
+      width: 200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+
+
+
+
+
+
+
 
 }
 

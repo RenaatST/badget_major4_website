@@ -4,7 +4,7 @@
             <legend></legend>
             <label for="txtzoek" class="zoeklabel">Zoek jouw beker</label>
             <input type="text" name="txtzoek" required id="txtzoek" value="" />
-            <input type="submit" name="btnzoek" id="btnzoek" value="Zoek" />
+            <!--<input type="submit" name="btnzoek" id="btnzoek" value="Zoek" />-->
         </fieldset>
     </form>
 </div>
@@ -17,4 +17,10 @@
             <p><?php echo $zoekbeker['naam']; ?></p>
             </li>
         <?php endforeach; ?>
+
+        <?php if(empty($zoekbekers)) : ?>
+            <p id="geenbekers"></p>
+        <?php endif; ?>
     </ol>
+
+    <div class="dummy">&nbsp;</div>
