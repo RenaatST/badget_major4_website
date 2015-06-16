@@ -2,9 +2,10 @@
 
 	function init() {
 
+		$(".home").click(function(e){e.preventDefault();scrollTo("logo");});
 		$(".navcups").click(function(e){e.preventDefault();scrollTo("cups");});
 		$(".navweds").click(function(e){e.preventDefault();scrollTo("stappenplan");});
-		$(".navapp").click(function(e){e.preventDefault();scrollTo("appstore");});
+		$(".navapp").click(function(e){e.preventDefault();scrollToAppstore("appstore");});
 		$(".navpromo").click(function(e){e.preventDefault();scrollTo("promofilm");});
 		$(".navprijs").click(function(e){e.preventDefault();scrollTo("prijs");});
 		
@@ -18,7 +19,9 @@
             mobileCheck: function() {
                 //hack - forces mobile version to be off
                 return false;
-            }
+            },
+
+            forceHeight: false
         });
 
         if(!Modernizr.svg) {
@@ -26,16 +29,20 @@
 	            return $(this).attr('src').replace('.svg', '.png');
 	        });
 	    }
-	    
+
+	    $(".menu-collapsed").click(function() {
+		  $(this).toggleClass("menu-expanded");
+		});
+
  	}
+
+
+
 
  	function changeHandler() {
 
 	    $.post("http://localhost/2014_2015/BADGES/index.php?page=search", $("form #txtzoek").serializeArray()).done(getSearchData);
 	    scrollTo("formdiv");
-
-
-
 	    
 	}
 
@@ -90,8 +97,13 @@
 	}
 
 
+ 	function scrollToAppstore(id) {
+        $('html, body').animate({ scrollTop: $('.' + id).offset().top - 250}, 'slow');
+        return false;
+    }
+
  	function scrollTo(id) {
-        $('html, body').animate({ scrollTop: $('.' + id).offset().top - 30}, 'normal');
+        $('html, body').animate({ scrollTop: $('.' + id).offset().top - 30}, 'slow');
         return false;
     }
 

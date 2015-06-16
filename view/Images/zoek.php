@@ -12,9 +12,10 @@
 
     <ol>
         <?php foreach($zoekbekers as $zoekbeker): ?>                
-           <li>
-           <img src="./images/bekers/<?php echo $zoekbeker['naam']; ?>.png" class="bekerfoto" alt="" width="200" />
-            <p><?php echo $zoekbeker['naam']; ?></p>
+            <li>
+                <img src="./images/bekers/<?php echo $zoekbeker['naam']; ?>.png" class="bekerfoto" alt="" width="200" />
+                <p><?php echo $zoekbeker['naam']; ?></p>
+                    
             </li>
         <?php endforeach; ?>
 

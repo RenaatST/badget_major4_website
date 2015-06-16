@@ -18,7 +18,7 @@
         
 </head>
 <body>
-
+    
     
     <article class="intro">
 
@@ -30,17 +30,22 @@
             Pukkelpop 2015
             </h1>
         </header>
-        
+
+
+        <div class="menu-collapsed">
+          <div class="bar"></div>
         <nav>
             <h1><span class="hide">Navigatie<span></h1>
             <ul>
+                <li><a href="#" class="home">Home</a></li>
                 <li><a href="#" class="navcups">Cups</a></li>
                 <li><a href="#" class="navweds">Wedstrijd</a></li>
-                <li><a href="#" class="navapp">App Store</a></li>
                 <li><a href="#" class="navpromo">Promofilm</a></li>
+                <li><a href="#" class="navapp">App Store</a></li>
                 <li><a href="#" class="navprijs">Prijzen</a></li>
             </ul>
         </nav>
+        </div>
 
     
         <header>
